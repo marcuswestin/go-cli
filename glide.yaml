@@ -1,0 +1,11 @@
+package: github.com/marcuswestin/go-cli
+import:
+- package: bufio
+- package: bytes
+- package: fmt
+- package: github.com/alecthomas/kingpin
+- package: github.com/marcuswestin/go-errs
+- package: os
+  subpackages:
+  - exec
+- package: strings
