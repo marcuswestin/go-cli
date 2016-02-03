@@ -23,6 +23,10 @@ func RunFromGitRoot(fn func()) {
 	Run(fn)
 }
 
+func DisableYesNo() {
+	yesNoDisabled = true
+}
+
 func YesNo(argv ...interface{}) bool {
 	fmt.Println(fmt.Sprint(argv) + "? (y/n/q)")
 	if yesNoDisabled {
